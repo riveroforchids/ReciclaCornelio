@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    border: 0;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --btn-bg-color: #F2F3F4;
+    --hover-bg-color: #334B48;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #FBFBFB;
+}
+
+header {
+    position: fixed;
+    background-color: #FBFBFB;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+    border-bottom: 1px solid #485935;
+}
+
+#logo {
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+    transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
+}
+
+.menu ul li a {
+    color: #000;
+}
+
+nav ul li a:hover {
+    color: var(--hover-bg-color);
+    font-weight: bold;
+}
+
+/*
+nav ul li a:hover {
+    color: #fff;
+    background-color: var(--hover-bg-color);  
+    border-radius: 25px; 
+}
+*/
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 8px;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #FBFADA;
+}
+
+ul {
+    list-style: none;
+}
+
+#login-btn {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 16px
+}
+
+.btn a:active {
+    color: #fff;
+}
+
+#home {
+    background: no-repeat right/50% url('./Assets/3725847-Photoroom.png-Photoroom.png');
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    max-width: 600px;
+    margin: 0 0 0 160px;
+}
+
+.home-text h1 {
+    font-family: 'Dancing Script';
+    color: #12372A;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home-text h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: justify;
+}
+
+.btn {
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-bg-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    a {
+        color: #000;
+    }
+}
+
+.btn:hover {
+    background-color: var(--hover-bg-color);
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
+
+#tipos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: #93A267;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 300px;
+    height: 200px; 
+    margin: 0 5px;
+    overflow: hidden; 
+}
+
+.grid-item h2 {
+    font-size: 16px;
+}
+
+.grid-item img {
+    width: 80px;
+    margin: 10px 0 10px 0;
+}
+
+.description {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    width: 300px;
+    height: 260px;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+}
+
+.grid-item:hover .description {
+    background-color: var(--hover-bg-color);
+    color: #fff;
+    width: 300px;
+    height: 260px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding: 16px;
+    opacity: 1; 
+    transition: opacity 0.3s;
+}
+
+#cadastro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    height: 600px;
+    /*background-color: #538070;*/
+}
+
+.content {
+    padding-left: 24px;
+}
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #CADBB7;
+}
+
+#coleta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+footer {
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #485935;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato a {
+    color: #fff;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 5px;
+}
+
+#contato a:hover {
+     font-weight: bold;
+}

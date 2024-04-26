@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <header>
+        <!--Colocar um icone de seta de voltar antes do texto do a e tentar ajeitar ela centralizada com o Home-->
+        <a id="voltar" href="index.html"> <i class="fa-solid fa-arrow-left"></i> Home</a>
+    </header>
+    <div class="login">
+        <form action="">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu e-mail aqui" required>
+            <label for="pwd">Senha</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Digite sua senha aqui" required>
+            <input id="btn" type="submit" value="Enviar">
+        </form>
+
+        <div id="cadastro_link">
+            <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

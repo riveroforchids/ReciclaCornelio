@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Parisienne&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./cadastro.css">
+</head>
+<body>
+    <header>
+        <!-- Colocar um icone de seta de voltar antes do texto do a e tentar ajeitar ela centralizada com o Home -->
+        <a id="voltar" href="index.html"> <i class="fa-solid fa-arrow-left"></i> Home</a>
+    </header>
+
+    <main>
+    <form action="">
+        <h1>Cadastro</h1>
+
+        <!-- Dados para o Login -->
+        <div class="dados">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu e-mail aqui" required>
+            <label for="pwd">Senha</label>
+            <input type="text" id="pwd" name="pwd" placeholder="Digite sua senha aqui" required>
+        </div>
+
+        <!-- Borda para separar os dados -->
+        <div class="borda"></div>
+
+        <!-- Endereço -->
+        <div class="endereco-container">
+            <div id="nome-estabelecimento">
+                <label for="name">Nome do estabelecimento</label>
+                <input type="text" id="name" name="name" placeholder="" required>
+            </div>
+
+            <div class="endereco">
+                <div id="rua">
+                    <label for="address">Endereço/Rua</label>
+                   <input type="text" id="address" name="address" placeholder="Endereço/Rua" required>
+               </div>
+   
+               <div id="numero">
+                   <label for="number">Número</label>
+                   <input type="number" id="number" name="number">
+                </div>
+            </div>
+
+            <div class="endereco">
+                <div id="bairro">
+                    <label for="bairro????">Bairro</label> 
+                    <input type="text" id="bairroo" name="bairro" required>
+                </div>
+                
+                <div id="complemento">
+                    <label for="complement">Complemento</label>
+                    <input type="text" id="complement" name="complement">
+                </div>
+            </div>
+
+           <div class="endereco">
+                <div id="cidade">
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" name="city" placeholder="" required>
+                </div>
+
+                <div id="estado">
+                    <label for="state">Estado</label>
+                    <select id="state" name="state">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR" selected >Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piaú</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </div>      
+        </div>
+
+        <!-- Borda para separar os dados -->
+        <div class="borda"></div>
+        
+        <!-- Tipos de coleta do estabelecimento - em CHECKBOX -->
+        <!-- Selecioner de maneira que há uma imagem para cada tipo? -->
+        <div class="checkboxes">
+            <input type="checkbox" id="orgânico" name="coleta" value="orgânico">
+            <label for="orgânico">Lixo Orgânico</label>
+            <input type="checkbox" id="plastico" name="coleta" value="plastico">
+            <label for="plastico">Plastico</label>
+            <input type="checkbox" id="papel-papelão" name="coleta" value="papel-papelão">
+            <label for="papel-papelão">Papel e Papelão</label>
+            <input type="checkbox" id="eletrônico" name="coleta" value="eletrônico">
+            <label for="eletrônico">Eletrônico</label>
+            <input type="checkbox" id="vidro" name="coleta" value="vidro">
+            <label for="vidro">Vidro</label>
+            <input type="checkbox" id="metal" name="coleta" value="metal">
+            <label for="metal">Metal</label>
+        </div>
+
+        <input id="btn" type="submit" value="Enviar">
+    </form>
+    </main>
+</body>
+</html>

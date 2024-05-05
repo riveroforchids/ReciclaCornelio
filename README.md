@@ -20,7 +20,7 @@ Projeto que consta com o desenvolvimento de um website que tem como objetivo aju
 1. **Home:** tela inicial, que consta com as seções
 - Home
 - Tipos
-- cadastro
+- Cadastro
 - Sobre
 2. **Login:** tela de login
 3. **Cadastro:** tela de cadastro
@@ -30,6 +30,6 @@ Projeto que consta com o desenvolvimento de um website que tem como objetivo aju
 Todas as imagens utilizadas foram obtidas por liçença grátis atráves do [Freepik](https://br.freepik.com).
 
  - [Ícones](https://www.freepik.com/)
- - [Background](https://br.freepik.com/vetores-gratis/pessoas-reciclando-juntos_7884850.htm)
-- [Imagem](https://br.freepik.com/vetores-gratis/conceito-de-reciclagem-de-pessoas_7970560.htm#page=10&query=reciclagem&position=9&from_view=keyword&track=sph&uuid=705d4d6d-36dc-460f-9638-6e618793875b)
+ - [Background da seção Home](https://br.freepik.com/vetores-gratis/pessoas-reciclando-juntos_7884850.htm)
+ - [Imagem da seção Cadastro](https://br.freepik.com/vetores-gratis/conceito-de-reciclagem-de-pessoas_7970560.htm#page=10&query=reciclagem&position=9&from_view=keyword&track=sph&uuid=705d4d6d-36dc-460f-9638-6e618793875b)
 

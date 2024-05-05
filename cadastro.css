@@ -13,7 +13,7 @@ a {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,6 @@ header {
 #voltar {
     font-weight:600;
     color: #F2F3F4;
-    margin-left: 8px;
 }
 
 #voltar:hover, #voltar:active {
@@ -41,6 +40,7 @@ main {
 h1 {
     font-size: 24px;
     text-align: center;
+    color: #485935;
     font-family: 'Dancing Script';
 }
 
@@ -78,8 +78,10 @@ select {
 }
 
 label {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 400;
     margin-bottom: 8px;
+    color: #28282B;
 }
 
 .borda {
@@ -104,6 +106,12 @@ label {
     width: 100%;
 }
 
+#telefone {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 #rua {
     display: flex;
     flex-direction: column;
@@ -113,6 +121,7 @@ label {
 #numero {
     display: flex;
     flex-direction: column;
+    width: 25%;
 }
 
 #bairro {
@@ -160,5 +169,110 @@ label {
 #btn:hover {
     background-color: #485935;
     color: #F2F3F4;
-    border: none;
+    border-color: #485935;
+}
+
+.checkboxes {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    height: 200px;
+    width: 170px;
+    position: relative;
+}
+
+.checkbox label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    color: #6c6c72;
+}
+
+.checkbox img {
+    width: 80px;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+input[type="checkbox"]:after{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-size: 22px;
+    top: 10px;
+    left: 10px;
+    color: #e2e6f3;
+}
+
+input[type="checkbox"]:hover{
+    transform: scale(1.08);
+}
+
+input[type="checkbox"]:checked{
+    border: 3px solid #485935;
+}
+
+input[type="checkbox"]:checked:after{
+    font-weight: 900;
+    content: "\f058";
+    color: #485935;
+}
+
+input[type="checkbox"]:checked + label .fas{
+    animation: grow 0.5s;
+}
+@keyframes grow{
+    50%{
+        font-size: 80px;
+    }
+}
+
+/* Responsividade */
+
+@media (min-width: 320px) and (max-width: 720px) {
+    .checkboxes {
+        grid-template-columns: 1fr;
+    }
+
+    #btn {
+        width: 50%;
+    }
+
+    .endereco {
+        flex-direction: column;
+    }
+
+    #nome-estabelecimento, #telefone, #rua, #numero, #bairro,
+    #complemento, #cidade, #estado {
+        width: 100%;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1101px) {
+    .checkboxes {
+        grid-template-columns: 1fr 1fr;
+    }
 }

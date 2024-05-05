@@ -27,6 +27,7 @@ header {
     height: 80px;
     padding: 12px;
     border-bottom: 1px solid #485935;
+    z-index: 1;
 }
 
 #logo {
@@ -57,14 +58,6 @@ nav ul li a:hover {
     color: var(--hover-bg-color);
     font-weight: bold;
 }
-
-/*
-nav ul li a:hover {
-    color: #fff;
-    background-color: var(--hover-bg-color);  
-    border-radius: 25px; 
-}
-*/
 
 .menu {
     display: flex;
@@ -156,17 +149,20 @@ ul {
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
-    a {
-        color: #000;
-    }
+    font-size: 13.5px;
+}
+
+.btn a {
+    color: #000;
 }
 
 .btn:hover {
     background-color: var(--hover-bg-color);
     color: #fff;
-    a {
-        color: #fff;
-    }
+}
+
+.btn:hover a {
+    color: #fff;
 }
 
 #tipos {
@@ -248,16 +244,58 @@ ul {
     /*background-color: #538070;*/
 }
 
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.img img{
+    border-radius: 20px;
+    width: 600px;
+}
+
 .content {
     padding-left: 24px;
 }
 
 #sobre {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 400px;
+    padding: 40px 60px;
     background-color: #CADBB7;
+}
+
+#sobre p {
+    text-align: justify;
+    margin-bottom: 0.2rem;
+}
+
+#sobre a {
+    color: #485935;
+    font-weight: bold;
+}
+
+#sobre h1 {
+    font-family: 'Dancing Script';
+    font-size: 24px;
+}
+
+#ODS {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+#ODS img {
+    width: 130px;
+    margin: 10px 0;
+    border-radius: 24px;
 }
 
 #coleta {
@@ -296,5 +334,162 @@ footer p {
 }
 
 #contato a:hover {
-     font-weight: bold;
+    font-weight: bold;
+}
+
+
+/* Responsividade */
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+   .home-text {
+        margin: 10px;
+    }
+
+    .home-text h1 {
+        font-size: 30px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-item {
+        width: 150px;
+        height: 150px;
+    }
+
+    .grid-item h2 {
+        font-size: 14px;
+    }
+
+    .grid-item img {
+        width: 60px;
+    }
+
+    .grid-item:hover .description {
+        width: 150px;
+        height: 150px;
+    }
+
+    .description {
+        width: 150px;
+        height: 150px;
+    }
+
+    .description p {
+        font-size: 12px;
+    }
+
+    #cadastro {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .img {
+        max-width: 100%;
+        max-height: 90%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .img img {
+        max-width: 100%;
+    }
+
+    #sobre {
+        flex-direction: row;
+        padding: 20px 20px;
+    }
+
+    #sobre p {
+        font-size: 14px;
+    }
+
+    #ODS img {
+        width: 60px;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #sobre {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+    .home-text {
+        margin: auto;
+    }
+
+    .home-text h1 {
+        font-size: 36px;
+    }
+
+    .grid-item {
+        width: 200px;
+        height: 200px;
+    }
+
+    .grid-item:hover .description {
+        width: 200px;
+        height: 200px;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .description {
+        width: 200px;
+        height: 200px;
+    }
+
+    #cadastro {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .img {
+        max-width: 100%;
+        max-height: 90%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .img img {
+        max-width: 100%;
+    }
+
+    #sobre {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+
+    #sobre p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #home {
+        background: none;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1480px) {
+    .home_content {
+        max-width: 50%;
+    }
+
+    .home-text {
+        margin: 0 0 0 10px;
+    }
 }

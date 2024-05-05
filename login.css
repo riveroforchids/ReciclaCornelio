@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,6 @@ a {
 #voltar {
     font-weight:600;
     color: #F2F3F4;
-    margin-left: 8px;
 }
 
 #voltar:hover, #voltar:active {
@@ -50,6 +49,9 @@ a {
 }
 
 .login form label {
+    font-size: 15px;
+    font-weight: 400;
+    color: #28282B;
     margin-bottom: 8px;
 }
 
@@ -79,7 +81,7 @@ a {
 #btn:hover {
     background-color: #485935;
     color: #F2F3F4;
-    border: none;
+    border-color: #485935;
 }
 #cadastro_link p {
     color: #F2F3F4;
@@ -89,4 +91,12 @@ a {
     color: #CADBB7;
     font-weight: bold;
     text-decoration: none;
+}
+
+
+/* Responsividade */
+@media (min-width: 320px) and (max-width: 720px) {
+    #btn {
+        width: 50%;
+    }
 }

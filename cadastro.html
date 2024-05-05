@@ -10,20 +10,19 @@
 </head>
 <body>
     <header>
-        <!-- Colocar um icone de seta de voltar antes do texto do a e tentar ajeitar ela centralizada com o Home -->
         <a id="voltar" href="index.html"> <i class="fa-solid fa-arrow-left"></i> Home</a>
     </header>
 
     <main>
-    <form action="">
+    <form action="login.html" method="get"> 
         <h1>Cadastro</h1>
 
         <!-- Dados para o Login -->
         <div class="dados">
             <label for="email">E-mail</label>
-            <input type="text" id="email" name="email" placeholder="Digite seu e-mail aqui" required>
+            <input type="text" id="email" name="email" placeholder="Digite seu e-mail aqui" autocomplete="email"  required>
             <label for="pwd">Senha</label>
-            <input type="text" id="pwd" name="pwd" placeholder="Digite sua senha aqui" required>
+            <input type="password" id="pwd" name="pwd" placeholder="Digite sua senha aqui" required>
         </div>
 
         <!-- Borda para separar os dados -->
@@ -33,13 +32,18 @@
         <div class="endereco-container">
             <div id="nome-estabelecimento">
                 <label for="name">Nome do estabelecimento</label>
-                <input type="text" id="name" name="name" placeholder="" required>
+                <input type="text" id="name" name="name" placeholder="" autocomplete="off" required>
+            </div>
+
+            <div id="telefone">
+                <label for="phone">Whatsapp</label>
+                <input type="tel" id="phone" name="phone" pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}" placeholder="(xx) xxxxx-xxxx" required />
             </div>
 
             <div class="endereco">
                 <div id="rua">
                     <label for="address">Endereço/Rua</label>
-                   <input type="text" id="address" name="address" placeholder="Endereço/Rua" required>
+                   <input type="text" id="address" name="address" required>
                </div>
    
                <div id="numero">
@@ -50,8 +54,8 @@
 
             <div class="endereco">
                 <div id="bairro">
-                    <label for="bairro????">Bairro</label> 
-                    <input type="text" id="bairroo" name="bairro" required>
+                    <label for="bairro_">Bairro</label> 
+                    <input type="text" id="bairro_" name="bairro" required>
                 </div>
                 
                 <div id="complemento">
@@ -103,22 +107,55 @@
 
         <!-- Borda para separar os dados -->
         <div class="borda"></div>
-        
-        <!-- Tipos de coleta do estabelecimento - em CHECKBOX -->
-        <!-- Selecioner de maneira que há uma imagem para cada tipo? -->
+
         <div class="checkboxes">
-            <input type="checkbox" id="orgânico" name="coleta" value="orgânico">
-            <label for="orgânico">Lixo Orgânico</label>
-            <input type="checkbox" id="plastico" name="coleta" value="plastico">
-            <label for="plastico">Plastico</label>
-            <input type="checkbox" id="papel-papelão" name="coleta" value="papel-papelão">
-            <label for="papel-papelão">Papel e Papelão</label>
-            <input type="checkbox" id="eletrônico" name="coleta" value="eletrônico">
-            <label for="eletrônico">Eletrônico</label>
-            <input type="checkbox" id="vidro" name="coleta" value="vidro">
-            <label for="vidro">Vidro</label>
-            <input type="checkbox" id="metal" name="coleta" value="metal">
-            <label for="metal">Metal</label>
+            <div class="checkbox">
+                <input type="checkbox" id="orgânico" name="coleta" value="orgânico">
+                <label for="orgânico">
+                    <img src="../src/Assets/stink_3239511.png" alt="">
+                    Lixo Orgânico
+                </label>
+            </div>
+            
+            <div class="checkbox">
+                <input type="checkbox" id="plastico" name="coleta" value="plastico">
+                <label for="plastico">
+                    <img src="../src/Assets/bottles_5765456.png" alt="">
+                    Plástico
+                </label>    
+            </div>
+            
+            <div class="checkbox">
+                <input type="checkbox" id="papel-papelão" name="coleta" value="papel-papelão">
+                <label for="papel-papelão">
+                    <img src="../src/Assets/paper_5765098.png" alt="">
+                    Papel e Papelão
+                </label>
+            </div>
+           
+            <div class="checkbox">
+                <input type="checkbox" id="eletrônico" name="coleta" value="eletrônico">
+                <label for="eletrônico">
+                    <img src="../src/Assets/electronics_5765332.png" alt="">
+                    Eletrônico
+                </label>    
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="vidro" name="coleta" value="vidro">
+                <label for="vidro">
+                    <img src="../src/Assets/bottles_5765066.png" alt="">
+                    Vidro
+                </label>    
+            </div>
+            
+            <div class="checkbox">
+                <input type="checkbox" id="metal" name="coleta" value="metal">
+                <label for="metal">
+                    <img src="../src/Assets/cans_5765163.png" alt="">
+                    Metal
+                </label>    
+            </div> 
         </div>
 
         <input id="btn" type="submit" value="Enviar">

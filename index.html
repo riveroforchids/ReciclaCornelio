@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReciclaCornélio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/Assets/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/Assets/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/Assets/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="../src/Assets/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.5.2/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Parisienne&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -11,17 +18,16 @@
 <body>
     <header>
         <nav>
-            <img id="logo" src="" width="150" alt="Logo">
+            <img id="logo" src="../src/Assets/logo2.png" width="150" alt="Logo com o ícone de reciclagem e ao lado está escrito Recicla Cornélio.">
             <div class="menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#tipos">Tipos</a></li>
                     <li><a href="#cadastro">Cadastro</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#coleta">Coleta</a></li> <!--Não tenho certeza se o quadro com exibições de coletas vai ficar na página principal ou em uma separada-->
                 </ul>
             </div>
-            <button id="login-btn" class="btn"><a href="login.html">Login</a></button>
+            <span id="login-btn" class="btn"><a href="login.html">Login</a></span>
        </nav>
     </header>
 
@@ -32,7 +38,7 @@
                     <h1>Encontre Seu Ponto de Reciclagem Mais Próximo</h1>
                     <p>Comprometidos com a sustentabilidade e a preservação do meio ambiente, oferecemos a você uma plataforma fácil de usar para localizar pontos de reciclagem perto de você. Descarte corretamente lixo orgânico e inorgânico e contribua para um mundo mais limpo e verde. Junte-se a nós na missão de transformar resíduos em recursos e promover um futuro sustentável para todos.</p>
                 
-                    <button class="btn">Encontre um ponto de reciclagem</button> <!--Página mostrando os pontos de reciclagem cadastrados?-->
+                    <button class="btn">Encontre um ponto de reciclagem</button>
                 </div>
             </div> 
         </section>
@@ -46,7 +52,6 @@
                         <p><strong>Descrição:</strong> Resíduos de origem biológica, como restos de comida, cascas de frutas e legumes.</p>
                         <p><strong>Como Descartar:</strong> Compostagem doméstica, coleta municipal de resíduos orgânicos.</p>
                     </div>
-                    
                 </div>
                 <div class="grid-item">
                     <h2>Plástico</h2>
@@ -56,7 +61,6 @@
                         <p><strong>Como Descartar:</strong> Separar e encaminhar para reciclagem.</p>
                     </div>
                 </div>
-
                 <div class="grid-item">
                     <h2>Papel e Papelão</h2>
                     <img src="./Assets/paper_5765098.png" alt="Uma caixa de bebida de papelão azul e uma folha de papel">
@@ -99,23 +103,27 @@
                 <p>
                     Ao cadastrar seu ponto de coleta conosco, você não apenas aumenta o engajamento do seu negócio, mas também contribui significativamente para o meio ambiente. Nosso objetivo é facilitar o encontro entre quem deseja reciclar e os locais disponíveis, promovendo uma sociedade mais consciente e responsável. Cadastre seu ponto de coleta hoje e seja um parceiro na construção de um futuro mais verde!
                 </p>
-                <button class="btn"><a href="cadastro.html">Cadastre ponto de reciclagem</a></button>
-                
-                <!--<span><a href="cadastro.html">Cadastre ponto de reciclagem</a></span>-->
+                <span class="btn"><a href="cadastro.html">Cadastre ponto de reciclagem</a></span>
             </div>
 
             <div class="img">
-                <img src="" alt="">
+                <img src="../src/Assets/3809484.jpg" alt="Quatro crianças, cada uma jogando o lixo no contâiner correto, sendo estes, o de papel, plástico, vidro e orgânico.">
             </div>
+        </section>
+
+        <section id="sobre">
+            <p><i>Olá!</i> Meu nome é Gabrielle, sou estudante de Engenharia da Computação na Universidade Tecnológica Federal do Paraná em Cornélio Procópio.
+            Esta website foi criada para a disciplina de Desenvolvimento Web Front-End, com o objetivo de desenvolver um sistema web que atenda uma ou mais ODS.
+            A ReciclaCornélio foi criada com o intuito de ajudar na divulgação e adoção de medidas sustentáveis referente ao descarte de lixo orgânico e inorgânico, 
+            buscando resolver problemas como a falta de informação sobre como lidar com o descarte correto do lixo domiciliar, apresentado os pontos de reciclagem e o funcionamento da coleta de lixo na cidade de Cornélio Procópio.
+            </p>
             
-        </section>
-
-        <section id="sobre"> <!-- Falar sobre mim, o projeto, os ODS que apoiam, etc -->
-            <p>*Texto*</p>
-        </section>
-
-        <section id="coleta"> <!-- Apresentar a coleta de lixo na cidade? -->
-            <p>*Texto*</p>
+            <h1>ODS atendidas pela ReciclaCornélio</h1>
+            <div id="ODS"> 
+                <img src="../src/Assets/ODS-12.svg" alt="Ícone da ODS 12: Consumo e produção responsáveis">
+                <img src="../src/Assets/ODS-13.svg" alt="Ícone das ODS 13: Ação contra a mudança global do clima">
+            </div>
+            <p style="text-align: center;">Para saber mais sobre os Objetivos de Desenvolvimento Sustentável (ODS), clique <a href="https://brasil.un.org/pt-br/sdgs" target="_blank">aqui</a>.</p>
         </section>
     </main>
 
@@ -123,9 +131,9 @@
         <p>Feito com <i class="fa-solid fa-heart"></i> por Gabrielle Saad</p>
         <div id="contato">
             <ul>
-                <li><i class="fa-solid fa-envelope"><a href="mailto:gabrielle.2001@alunos.utfpr.edu.br">gabrielle.2001@alunos.utfpr.edu.br</a></i></li>
-                <li><i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/gabrielle-saad">Linkedin</a></i></li>
-                <li><i class="fa-brands fa-github"><a href="https://github.com/riveroforchids">Github</a></i></li>
+                <li><i class="fa-solid fa-envelope"><a href="mailto:gabrielle.2001@alunos.utfpr.edu.br" target="_blank">gabrielle.2001@alunos.utfpr.edu.br</a></i></li>
+                <li><i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/gabrielle-saad" target="_blank">Linkedin</a></i></li>
+                <li><i class="fa-brands fa-github"><a href="https://github.com/riveroforchids" target="_blank">Github</a></i></li>
             </ul>
         </div>
     </footer>

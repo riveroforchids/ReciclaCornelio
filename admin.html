@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de novos usuários</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Parisienne&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+    <header>
+        <a id="voltar" href="index.html"> <i class="fa-solid fa-arrow-left"></i> Home</a>
+    </header>
+
+    <main>
+    <form action="admin.html" method="get" id="admin-form"> 
+        <h1>Cadastro de novos usuários</h1>
+
+        <!-- Dados para o Login -->
+        <div class="dados">
+            <label for="name">Nome do usuário</label>
+            <input type="text" id="name" name="nome" placeholder="Digite seu nome do usuário aqui" autocomplete="email"  required>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu e-mail aqui" required>
+        </div>
+
+        <div id="cadastro-btn">
+            <input id="btn" type="submit" value="Enviar">
+            <button type="button" id="clear-fields">Limpar</button>
+        </div>
+        
+    </form>
+
+    <!-- Lista de Usuários -->
+     <div id="list">
+        <h2>Lista de Usuários</h2>
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+        <input type="text" id="search" placeholder="Pesquisar por nome ou email">
+        </div>
+        <ul id="userList"></ul>
+
+        <button id="delete-all">Excluir Todos</button>
+     </div>
+    
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

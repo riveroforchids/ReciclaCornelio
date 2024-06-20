@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #485935;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+}
+
+#voltar {
+    font-weight:600;
+    color: #F2F3F4;
+}
+
+#voltar:hover, #voltar:active {
+    color: #CADBB7;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, #list h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #485935;
+    font-family: 'Dancing Script';
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f3f4;
+    border-radius: 8px;
+    padding: 64px;
+    margin: 80px auto;
+    width: 50%;
+}
+
+input {
+    margin-bottom: 16px;
+    padding: 16px 24px;
+    border: 0;
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #28282B;
+}
+
+.borda {
+    border-bottom: 1px solid #485935;
+    margin: 4px 0 20px 0;
+}
+
+#cadastro-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn, #clear-fields {
+    background: transparent;
+    border: 2px solid #485935;
+    border-radius: 16px;
+    color: #485935;
+    width: 30%;
+    padding: 16px 24px;
+    margin: 10px auto;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+#btn:hover, #clear-fields:hover, #delete-button:hover, #delete-all:hover{
+    background-color: #485935;
+    color: #F2F3F4;
+    border-color: #485935;
+}
+
+.search-container {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    bottom: 50%;
+    padding-left: 10px;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f3f4;
+    border-radius: 8px;
+    padding: 64px;
+    margin: 80px auto;
+    width: 50%;
+}
+
+#list input {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 30px;
+}
+
+#userList li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 10px auto;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+#delete-button {
+    background: transparent;
+    border: 2px solid #485935;
+    border-radius: 16px;
+    color: #485935;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s ease;
+    margin-left: 10px;
+}
+
+#delete-all {
+    background: transparent;
+    border: 2px solid #485935;
+    border-radius: 16px;
+    color: #485935;
+    width: 50%;
+    padding: 16px 24px;
+    margin: 10px auto;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+/* Responsividade */
+
+@media (min-width: 320px) and (max-width: 601px) {
+   #cadastro-btn {
+       flex-direction: column;
+   }
+
+   #btn, #clear-fields {
+       width: 60%;
+   }
+
+   #delete-all {
+       width: 80%;
+   }
+
+   #userList li {
+       flex-direction: column;
+   }
+
+   #delete-button {
+       margin-top: 10px;
+       width: 50%;
+       margin-left: 0;
+   }
+}

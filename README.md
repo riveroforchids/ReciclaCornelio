@@ -13,6 +13,7 @@ Projeto que consta com o desenvolvimento de um website que tem como objetivo aju
 
 - HTML
 - CSS
+- JavaScript
 
 
 ## Desenvolvimento
@@ -24,6 +25,12 @@ Projeto que consta com o desenvolvimento de um website que tem como objetivo aju
 - Sobre
 2. **Login:** tela de login
 3. **Cadastro:** tela de cadastro
+4. **Admin** tela de cadastro de novos usuários e exibição dos usuários cadastrados em uma lista, com as seguintes funcionalidades:
+- Inclusão de um item (que consta a data de envio, nome e e-mail do usuário) na lista e no localStorage a partir das informação enviadas pelo formulário
+- Botão para limpar campos do formulário
+- Botão para excluir um determinado item da lista e do Local Storage
+- Botão para excluir todos os itens da lista e do Local Storage
+- Barra de pesquisa, que permite pesquisar um dos campos do formulário, exibindo itens da lista que estão de acordo com o input recebido
 
 
 ## Créditos

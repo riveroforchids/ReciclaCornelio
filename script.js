@@ -15,6 +15,8 @@ document.getElementById('admin-form').addEventListener('submit', function(event)
     addUser(nome, email, dataEnvio);
     nome.value = '';
     email.value = '';
+
+    document.getElementById('admin-form').reset();
 });
 
 function addUser(nome, email, dataEnvio) {
